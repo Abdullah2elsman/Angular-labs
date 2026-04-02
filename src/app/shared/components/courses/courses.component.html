@@ -1,24 +1,19 @@
-<div class="container mt-5">
-  <h2 class="text-center mb-4">Available Courses</h2>
-  <div class="d-flex justify-content-center p-4 align-items-center">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Available Courses</h2>
+    <div class="d-flex justify-content-center p-4 align-items-center">
 
-    <label for="catFilter" class="form-label p-3">Filter by Category:</label>
-    <select
-    name="catFilter"
-    id="catFilter"
-    class="form-select w-25"
-    [(ngModel)]="selectedCatId"
-    (change)="filterByCategory()"
-    >
-    <option [value]="0">All Categories</option>
-    @for (cat of categories; track cat.id) {
-      <option [value]="cat.id">{{ cat.name }}</option>
-    }
-  </select>
-</div>
+      <label for="catFilter" class="form-label p-3">Filter by Category:</label>
+      <select name="catFilter" id="catFilter" class="form-select w-25" [(ngModel)]="selectedCatId"
+        (change)="filterByCategory()">
+        <option [value]="0">All Categories</option>
+        @for (cat of categories; track cat.id) {
+        <option [value]="cat.id">{{ cat.name }}</option>
+        }
+      </select>
+    </div>
 
-  <div class="row">
-    @for (course of filteredCourses; track course.id) {
+    <div class="row">
+      @for (course of filteredCourses; track course.id) {
       <div class="col-md-4 mb-4">
         <div class="card h-100 shadow-sm">
           <img [src]="course.image" class="card-img-top" [alt]="course.title" />
@@ -28,8 +23,21 @@
             <p class="card-text text-muted mb-1">
               <strong>Instructor:</strong> {{ course.instructor }}
             </p>
-            <p class="card-text mb-1"><strong>Price:</strong> {{ course.price }}</p>
+            <div class="card-text mb-2">
+              <strong>Price:</strong>
 
+              <small class="text-decoration-line-through text-muted ms-2">
+                {{ course.price | currency:'EGP' }}
+              </small>
+
+              <span class="text-success fw-bold ms-2 fs-5">
+                {{ course.price | discount: 20 | currency:'EGP' }}
+              </span>
+
+              <span class="badge bg-danger rounded-pill ms-2">
+                20% OFF
+              </span>
+            </div>
             <p class="card-text">
               <span class="badge" [ngClass]="course.seats > 0 ? 'bg-success' : 'bg-danger'">
                 {{ course.seats > 0 ? course.seats + ' Seats Left' : 'Full' }}
@@ -37,13 +45,17 @@
             </p>
 
             <div class="mt-auto">
-              <button class="btn btn-primary w-100" [disabled]="course.seats === 0">
+              <button 
+                class="btn btn-primary w-100" 
+                [disabled]="course.seats === 0"
+                appDisableAfterClick
+              >
                 Enroll Now
               </button>
             </div>
           </div>
         </div>
       </div>
-    }
+      }
+    </div>
   </div>
-</div>

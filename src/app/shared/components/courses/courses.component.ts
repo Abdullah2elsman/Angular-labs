@@ -3,12 +3,14 @@ import { Component, OnInit } from '@angular/core';
 import { Category } from '../../../models/category.model';
 import { Course } from '../../../models/course.model';
 import { FormsModule } from '@angular/forms';
+import { DiscountPipe } from "../../pipes/discount-pipe";
+import { AppDisableAfterClick } from "../../directives/app-disable-after-click";
 
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
   styleUrls: ['./courses.component.css'],
-  imports: [NgClass,CommonModule, FormsModule],
+  imports: [NgClass, CommonModule, FormsModule, DiscountPipe, AppDisableAfterClick],
 })
 export class CoursesComponent implements OnInit{
   courses: Course[] = [
