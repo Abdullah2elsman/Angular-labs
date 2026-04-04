@@ -1,33 +1,43 @@
 import { CommonModule, NgClass } from '@angular/common';
-import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Category } from '../../../models/category.model';
+import { CourseService } from '../../../core/services/course.service';
 import { Course } from '../../../models/course.model';
 import { AppDisableAfterClick } from '../../directives/app-disable-after-click';
 import { DiscountPipe } from '../../pipes/discount-pipe';
-import { CourseService } from '../../../core/services/course.service';
-import { CategoryServices } from '../../../core/services/category.service';
 
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
   imports: [NgClass, CommonModule, FormsModule, DiscountPipe, AppDisableAfterClick],
 })
-export class CoursesComponent implements OnInit {
+export class CoursesComponent implements OnInit, OnChanges {
+  @Input() selectedCatId: number = 0;
+  @Output() onCourseEnroll = new EventEmitter<number>();
   allCourses: Course[] = [];
   courses: Course[] = [];
-  categories: Category[] = [];
-  selectedCatId: number = 0;
 
-  constructor(private courseService: CourseService, private categoryService: CategoryServices) { }
-  
+  constructor(private courseService: CourseService) {}
+
   ngOnInit() {
     this.allCourses = this.courseService.getCourses();
     this.courses = this.allCourses;
-    this.categories = this.categoryService.getCategories();
   }
 
-  filterByCategory() {
+  enroll(price: number, discount: number) {
+    price = price - (price * (discount / 100));
+    this.onCourseEnroll.emit(price);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
     this.courses = this.courseService.filtersCourses(this.selectedCatId);
   }
 }
