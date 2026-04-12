@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" routerLink="/home">
+      <i class="bi bi-mortarboard-fill me-2"></i>Courses
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link px-3" routerLink="/home" routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a class="nav-link px-3" routerLink="/courses" routerLinkActive="active">Courses</a>
+        <a class="nav-link px-3" routerLink="/about-us" routerLinkActive="active">About Us</a>
+        <a class="nav-link px-3" routerLink="/contact-us" routerLinkActive="active">Contact Us</a>
+      </div>
+      <div class="ms-lg-3">
+        <a routerLink="/login">
+          <button class="btn btn-primary rounded-pill px-4">Login</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

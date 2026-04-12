@@ -1,3 +1,5 @@
+import { Review } from "./review.model";
+
 export interface Course{
     id: number;
     title: string;
@@ -6,4 +8,7 @@ export interface Course{
     seats: number;
     image: string;
     catId: number;
+    desc: string;
+    roadmap: string[];
+    reviews: Review[];
 }

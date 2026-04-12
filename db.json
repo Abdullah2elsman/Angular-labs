@@ -1,0 +1,402 @@
+{
+    "courses": [
+        {
+            "id": 201,
+            "title": "Advanced Angular Architecture",
+            "instructor": "Eng. Mona Ali",
+            "price": 2500,
+            "seats": 12,
+            "image": "images/advanced angular.jpeg",
+            "catId": 1,
+            "desc": "Master the core concepts of Angular architecture including component lifecycle, dependency injection, and advanced patterns. Learn how to build scalable applications with modern Angular features like Signals, standalone components, and reactive programming with RxJS for state management.",
+            "roadmap": [
+                "RxJS Deep Dive",
+                "Signals & State Management",
+                "Standalone Components",
+                "Micro-frontends"
+            ],
+            "reviews": [
+                {
+                    "rate": 5,
+                    "comment": "Amazing deep dive into Signals! The instructor explained complex concepts in a very simple way. I now have a much better understanding of reactive patterns.",
+                    "user": "Abdullah"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Very technical and helpful. Some sections could use more hands-on exercises, but overall excellent content.",
+                    "user": "Ahmed"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Best Angular course I have taken. The roadmap is well structured and the examples are practical.",
+                    "user": "Fatima"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Highly recommended for intermediate developers who want to level up their skills.",
+                    "user": "Mohamed"
+                }
+            ]
+        },
+        {
+            "id": 202,
+            "title": "Node.js Backend Mastery",
+            "instructor": "Dr. Ahmed Ibrahim",
+            "price": 2200,
+            "seats": 8,
+            "image": "images/Backend Mastery with node.jpg",
+            "catId": 1,
+            "desc": "Build robust and scalable server-side applications using Node.js. This comprehensive course covers the event loop, asynchronous programming, Express middleware, database integration with MongoDB, and security best practices including JWT authentication and API design patterns.",
+            "roadmap": [
+                "Event Loop & Non-blocking IO",
+                "Express Middleware",
+                "MongoDB Aggregations",
+                "JWT Auth"
+            ],
+            "reviews": [
+                {
+                    "rate": 5,
+                    "comment": "Best backend course in Egypt. The instructor has real-world experience and shares practical tips throughout.",
+                    "user": "Mostafa"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Finally understand how Node.js works under the hood. The async patterns section was mind-blowing.",
+                    "user": "Salma"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Great course content, wish there were more database optimization examples.",
+                    "user": "Karim"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Excellent teaching style and very well organized. Already using what I learned in my production apps.",
+                    "user": "Leila"
+                }
+            ]
+        },
+        {
+            "id": 203,
+            "title": "UI/UX Design Patterns",
+            "instructor": "Sarah Hassan",
+            "price": 1800,
+            "seats": 0,
+            "image": "images/UI UX patterns.webp",
+            "catId": 2,
+            "desc": "Learn the psychological principles behind great design and how to apply industry-standard UI/UX patterns. This course covers user research methodologies, wireframing techniques in Figma, creating comprehensive design systems, and conducting usability testing to validate your designs.",
+            "roadmap": [
+                "User Research",
+                "Wireframing in Figma",
+                "Design Systems",
+                "Usability Testing"
+            ],
+            "reviews": [
+                {
+                    "rate": 4,
+                    "comment": "Great patterns, but needs more Figma tasks. The theory is solid though.",
+                    "user": "Sara"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Amazing insight into design psychology. Changed how I approach design decisions completely.",
+                    "user": "Zainab"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Very informative and well-presented. Great for both beginners and intermediate designers.",
+                    "user": "Noor"
+                },
+                {
+                    "rate": 5,
+                    "comment": "The design systems section alone is worth the price. Highly professional content.",
+                    "user": "Dina"
+                }
+            ]
+        },
+        {
+            "id": 204,
+            "title": "React Native Mobile Apps",
+            "instructor": "Hany Mahmoud",
+            "price": 2100,
+            "seats": 15,
+            "image": "images/react native mobile.png",
+            "catId": 1,
+            "desc": "Create cross-platform mobile applications for iOS and Android using React Native. Learn modern React hooks, integrate native modules, implement push notifications, and publish your apps to the App Store and Google Play Store with professional deployment practices.",
+            "roadmap": [
+                "React Hooks",
+                "Native Modules",
+                "Push Notifications",
+                "App Store Publishing"
+            ],
+            "reviews": [
+                {
+                    "rate": 5,
+                    "comment": "Smooth learning curve. Perfect for web developers transitioning to mobile development.",
+                    "user": "Omar"
+                },
+                {
+                    "rate": 5,
+                    "comment": "The native modules section was exactly what I needed. Great practical examples.",
+                    "user": "Heba"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Good course overall. Would appreciate more debugging tips and error handling strategies.",
+                    "user": "Rami"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Publishing to both stores was made so simple. Worth every penny!",
+                    "user": "Nada"
+                }
+            ]
+        },
+        {
+            "id": 205,
+            "title": "DevOps for Beginners",
+            "instructor": "Osama Sayed",
+            "price": 3000,
+            "seats": 5,
+            "image": "images/dev ops for beginners.jpeg",
+            "catId": 3,
+            "desc": "Bridging the gap between development and operations by mastering DevOps practices and tools. Learn Linux system administration, containerization with Docker, continuous integration and deployment using GitHub Actions, Kubernetes orchestration, and infrastructure as code principles.",
+            "roadmap": [
+                "Linux Basics",
+                "Dockerizing Apps",
+                "CI/CD with GitHub Actions",
+                "Kubernetes"
+            ],
+            "reviews": [
+                {
+                    "rate": 5,
+                    "comment": "Essential for every developer. Finally understand CI/CD pipelines deeply.",
+                    "user": "Khaled"
+                },
+                {
+                    "rate": 5,
+                    "comment": "From zero to hero in DevOps. The instructor makes complex topics accessible.",
+                    "user": "Ibrahim"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Excellent course with practical labs. Would like more Kubernetes examples.",
+                    "user": "Yara"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Game-changing course. Implemented everything in our company immediately.",
+                    "user": "Yasmine"
+                }
+            ]
+        },
+        {
+            "id": 206,
+            "title": "Digital Marketing Strategy",
+            "instructor": "Layla Kamel",
+            "price": 1200,
+            "seats": 20,
+            "image": "images/digital marketing stratigy.jpeg",
+            "catId": 4,
+            "desc": "Comprehensive guide to building a brand online through strategic digital marketing. Learn how to create detailed audience personas, develop content calendars, master Facebook Ads for maximum ROI, use Google Analytics for data-driven decisions, and build an integrated marketing strategy.",
+            "roadmap": [
+                "Audience Persona",
+                "Content Calendar",
+                "Facebook Ads Mastery",
+                "Google Analytics"
+            ],
+            "reviews": [
+                {
+                    "rate": 3,
+                    "comment": "Good, but a bit basic. Wished there was more advanced strategy discussion.",
+                    "user": "Mona"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Very useful for small business owners. The ads section was particularly helpful.",
+                    "user": "Sameh"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Practical and actionable advice. Already seeing results with the strategies taught here.",
+                    "user": "Nouran"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Great foundation for digital marketing. Good for beginners and intermediate learners.",
+                    "user": "Rashid"
+                }
+            ]
+        },
+        {
+            "id": 207,
+            "title": "Python for Data Science",
+            "instructor": "Dr. Tarek Omar",
+            "price": 2800,
+            "seats": 10,
+            "image": "images/python for data science.jpeg",
+            "catId": 1,
+            "desc": "Harness the power of Python to analyze complex datasets and derive meaningful insights. Master NumPy for numerical computing, Pandas for data manipulation, exploratory data analysis techniques, visualization with Matplotlib and Seaborn, and introduction to machine learning algorithms.",
+            "roadmap": [
+                "NumPy & Pandas",
+                "Data Cleaning",
+                "Exploratory Data Analysis",
+                "Machine Learning Basics"
+            ],
+            "reviews": [
+                {
+                    "rate": 5,
+                    "comment": "Python is a must, and this course delivers. The data cleaning section alone saved me hours of work.",
+                    "user": "Hassan"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Excellent instructor with real data science experience. Highly recommend!",
+                    "user": "Mariam"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Very comprehensive. Some ML sections could be deeper but great for beginners.",
+                    "user": "Waleed"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Best investment for my career transition. Now working as a data analyst thanks to this course.",
+                    "user": "Sylvia"
+                }
+            ]
+        },
+        {
+            "id": 208,
+            "title": "Graphic Design with Photoshop",
+            "instructor": "Nour El-Din",
+            "price": 900,
+            "seats": 2,
+            "image": "images/graphic design with photoshop.jpeg",
+            "catId": 2,
+            "desc": "Start your creative journey by mastering Adobe Photoshop. Learn professional layer management, advanced selection tools, color correction and enhancement techniques, digital painting fundamentals, and how to create stunning visual designs for web and print.",
+            "roadmap": [
+                "Layer Management",
+                "Selection Tools",
+                "Color Correction",
+                "Digital Painting"
+            ],
+            "reviews": [
+                {
+                    "rate": 4,
+                    "comment": "Very fun and practical. The instructor makes learning Photoshop enjoyable.",
+                    "user": "Aya"
+                },
+                {
+                    "rate": 5,
+                    "comment": "I went from complete beginner to creating professional designs. Amazing course!",
+                    "user": "Lina"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Good pacing and clear explanations. Great resource for aspiring designers.",
+                    "user": "Karim"
+                },
+                {
+                    "rate": 5,
+                    "comment": "The digital painting section opened a whole new creative world for me.",
+                    "user": "Hana"
+                }
+            ]
+        },
+        {
+            "id": 209,
+            "title": "Cyber Security Essentials",
+            "instructor": "Khaled Fawzy",
+            "price": 3500,
+            "seats": 6,
+            "image": "images/cyber security essentials.jpeg",
+            "catId": 3,
+            "desc": "Protect networks and data from cyber threats with comprehensive security knowledge. Learn networking fundamentals, cryptography principles, penetration testing techniques, vulnerability assessment, security compliance standards, and real-world incident response strategies.",
+            "roadmap": [
+                "Networking Fundamentals",
+                "Cryptography",
+                "Penetration Testing",
+                "Security Compliance"
+            ],
+            "reviews": [
+                {
+                    "rate": 5,
+                    "comment": "A bit hard, but worth it. The instructor explains security concepts brilliantly.",
+                    "user": "Tadros"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Essential knowledge for every IT professional. Very thorough and up-to-date content.",
+                    "user": "Maged"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Challenging but rewarding. Definitely improved my security awareness.",
+                    "user": "Sherif"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Industry-standard content taught by an experienced security professional. Highly recommended.",
+                    "user": "Lamar"
+                }
+            ]
+        },
+        {
+            "id": 210,
+            "title": "SEO and Content Writing",
+            "instructor": "Amira Refaat",
+            "price": 1100,
+            "seats": 25,
+            "image": "images/seo content writing.jpeg",
+            "catId": 4,
+            "desc": "Learn how to rank your content on the first page of Google through strategic SEO and high-quality content writing. Master on-page and off-page SEO techniques, backlink strategies, semantic writing for user intent, technical SEO audits, and content optimization for search engines.",
+            "roadmap": [
+                "On-Page SEO",
+                "Backlink Strategy",
+                "Semantic Writing",
+                "Technical SEO Audit"
+            ],
+            "reviews": [
+                {
+                    "rate": 4,
+                    "comment": "Helpful tips for ranking. The backlink strategy section was particularly valuable.",
+                    "user": "Amira"
+                },
+                {
+                    "rate": 5,
+                    "comment": "My website traffic tripled after implementing the strategies from this course!",
+                    "user": "Fadi"
+                },
+                {
+                    "rate": 5,
+                    "comment": "Clear, practical, and results-driven content. Highly recommend for content creators.",
+                    "user": "Dalia"
+                },
+                {
+                    "rate": 4,
+                    "comment": "Great SEO fundamentals explained in an easy-to-understand manner.",
+                    "user": "Zaki"
+                }
+            ]
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "programming"
+        },
+        {
+            "id": 2,
+            "name": "Marketing"
+        },
+        {
+            "id": 3,
+            "name": "Business"
+        },
+        {
+            "id": 4,
+            "name": "Design"
+        }
+    ]
+}

@@ -30,11 +30,15 @@
           </span>
         </p>
 
-        <div class="mt-auto">
-          <button class="btn btn-primary w-100" [disabled]="course.seats === 0" (click)="enroll(course.price, 20)"
-            appDisableAfterClick>
+        <div class="mt-auto d-flex gap-2">
+          <button class="btn btn-primary flex-grow-1 shadow-sm" [disabled]="course.seats === 0"
+            (click)="enroll(course.price, 20)" appDisableAfterClick>
             Enroll Now
           </button>
+        
+          <a [routerLink] = "['/course-details',course.id]" class="btn btn-outline-primary flex-grow-1 shadow-sm" >
+            View Course
+          </a>
         </div>
       </div>
     </div>
